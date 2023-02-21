@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix sign</title>
+    <meta name="description" content="A demo layout of netflix, only practice with HTML, CSS & JS">
+    <meta name="author" content="Bruno Sena">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7e4c6b700b.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7e4c6b700b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form class="container">
+        <img src="logo.png" alt="netflix logo">
+        <input class="input" type="text" placeholder="Email or phone number">
+        <div class="input-cnt">
+            <input id="input-pass" class="input" type="password" placeholder="Password">
+            <i id="eyeBtn" class="fa-regular fa-eye-slash"></i>
+        </div>
+        <input type="button" value="Sign In">
+        <div class="remember">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+        </div>
+    </form>
+    <footer class="footer">
+        <h4>Questions? Call 00-Netflix-911-B4BY (USA)</h4>
+        <nav class="nav">
+            <a class="nav__link" href="#">FAQ</a>
+            <a class="nav__link" href="#">Help Center</a>
+            <a class="nav__link" href="#">Terms of Use</a>
+            <a class="nav__link" href="#">Privacy</a>
+            <a class="nav__link" href="#">Corporate Information</a>
+        </nav>
+    </footer>
+    <script src="js/init.js"></script>
+</body>
+</html>

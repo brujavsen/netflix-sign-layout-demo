@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap&family=Bebas+Neue&display=swap');
+
+:root {
+
+    /* Colors */
+    --black: #000;
+    --red: #db0000;
+    --gray: #77777734;
+
+    /* font */
+    --font-net: 'Bebas Neue', cursive;
+}
+
+/* Basic html & body style */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--black);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+img {
+    width: 60%;
+}
+
+/* Container */
+.container {
+    width: min(100%, 120rem);
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* input text */
+.input-cnt {
+    width: 100%;
+    text-align: center;
+}
+.input {
+    margin: 15px;
+    padding: 20px;
+    width: 90%;
+    background: none;
+    border: none;
+    background-color: #77777734;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+}
+.input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+.input:hover {
+    transition: .3s ease-in-out;
+    box-shadow: 0px 0px 20px #7777775e;
+}
+.input:focus {
+    outline: none;
+    box-shadow: 0px 0px 7px var(--red);
+}
+#input-pass {
+    margin-left: -12px;
+    position: static;
+}
+
+/* Eye btn */
+#eyeBtn {
+    color: white;
+    font-size: 15px;
+    margin-left: -48px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* button */
+input[type=button] {
+    background: none;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    transition: .3s ease-in-out;
+    text-shadow: 1px 1px 20px white;
+    box-shadow: 1px 1px 20px var(--red);
+}
+/* remember me */
+.remember {
+    align-self: baseline;
+    width: 90%;
+    margin: 30px auto;
+}
+input[type=checkbox] {
+    display: inline-block;
+    transform: scale(2);
+    accent-color: var(--red);
+    margin-left: 10px;
+}
+input[type=checkbox]:hover {
+    transition: .5s ease-in-out;
+    box-shadow: 1px 1px 40px var(--red);
+    border: none;
+}
+label{
+    margin-left: 10px;
+    color: #aaa9a9d5;
+    font-size: 18px;
+}
+label:hover{
+    transition: .4s ease-in-out;
+    text-shadow: 1px 1px 20px white;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h4 {
+    text-align: center;
+    color: white;
+    margin-top: -25px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.nav {
+    text-align: center;
+}
+.nav__link {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--red);
+    font-size: 17px;
+}
+.nav__link:hover {
+    text-shadow: 1px 1px 15px var(--red);
+    font-weight: 700;
+}
+
+
+/* MEDIA QUERY */
+
+/* Celphone */
+@media (min-width: 480px) {
+    .container {
+        width: min(90%, 120rem);
+    }
+    .input {
+        width: 90%;
+    }
+    input[type=button] {
+        width: 90%;
+    }
+    .remember {
+        width: 90%;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: min(90%, 120rem);
+    }
+    .input {
+        width: 60%;
+    }
+    input[type=button] {
+        width: 60%;
+    }
+    .remember {
+        width: 60%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .container {
+        width: min(90%, 120rem);
+    }
+    .input {
+        width: 50%;
+    }
+    input[type=button] {
+        width: 50%;
+    }
+    .remember {
+        width: 50%;
+    }
+}
